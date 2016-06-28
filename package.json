@@ -1,0 +1,19 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "basic calculations like add, subtract, multiply and divide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandeep147/calculator-node.js.git"
+  },
+  "author": "mandeep kaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandeep147/calculator-node.js/issues"
+  },
+  "homepage": "https://github.com/mandeep147/calculator-node.js#readme"
+}
