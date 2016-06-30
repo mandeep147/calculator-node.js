@@ -26,7 +26,7 @@ app.get('/process', function(req, res){
    	var op = req.query.op;
 	var c;
 	
-	if(parseInt(a)!=isNaN(a)){
+	if(( parseInt(a) != isNaN(a)) || (parseInt(b) != isNan(b) )){
 		c = 'enter both the numbers';
 	}
 	else if(op == "Add"){
