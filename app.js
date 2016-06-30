@@ -19,17 +19,14 @@ app.get('/',function (req, res) {
 	res.render('main.html');
 });
 
-app.get('/process', function(req, res){
+app.post('/process', function(req, res){
 
-	var a = parseInt(req.query.a);
-   	var b = parseInt(req.query.b);
-   	var op = req.query.op;
+   	var a = req.body.a;
+   	var b = req.body.b;
+   	var op = req.body.op;
 	var c;
-	
-	if (isNaN(a) || isNaN(b) ) {
-		c = 'enter both numbers';
-	}
-	else if(op == "Add"){
+
+	if(op == "Add"){
 		c = a + b;
 	}
 	else if (op == 'Subtract') {
