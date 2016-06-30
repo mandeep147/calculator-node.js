@@ -26,10 +26,10 @@ app.get('/process', function(req, res){
    	var op = req.query.op;
 	var c;
 	
-	console.log(typeof a +''+ a);
-	console.log(typeof op);
-
-	if(op == "Add"){
+	if (isNaN(a) || isNaN(b) ) {
+		c = 'enter both numbers';
+	}
+	else if(op == "Add"){
 		c = a + b;
 	}
 	else if (op == 'Subtract') {
